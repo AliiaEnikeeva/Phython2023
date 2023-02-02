@@ -10,6 +10,8 @@ Output yes
 Input 123456
 Output no
 '''
+'''
+var 1
 n = int(input('Введите шестизначный номер билета: '))
 a1 = n % 10
 a2 = n % 100 // 10
@@ -21,3 +23,21 @@ if (a1 + a2 + a3) == (a4 + a5 + a6):
     print('yes')
 else:
     print('no')
+'''
+
+# Коммент Марата - Можно еще добавить условие, что номер билета 6-значный.
+
+# var 2 Строковым методом
+s = input('Введите шестизначный номер билета: ')
+if len(s) != 6:
+    print('Ввели неверное число')
+else:
+    res1 = 0
+    res2 = 0
+    for i in range(len(s)//2): 
+        res1 += int(s[i])    # i = 0, 1, 2
+        res2 += int(s[len(s)//2 +i])    # i = 3, 4, 5
+    if res1 == res2:
+        print(f'{s} -> yes')
+    else:
+        print(f'{s} -> no')
