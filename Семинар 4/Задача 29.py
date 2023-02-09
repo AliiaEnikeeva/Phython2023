@@ -23,11 +23,29 @@
 #     max_number = n
 # print(max_number)
 
+# Исправленный код Вани
+# n = int(input())
+# max_number = n
+# while n != 0:
+#     n = int(input())
+#     if max_number < n:
+#         max_number = n
+# print(max_number)
+
 # код Петя
+# n = int(input())
+# max_number = -1
+# while n < 0:
+#     n = int(input())
+#     if max_number < n:
+#         n = max_number
+# print(n) 
+
+# Исправленный код Пети
 n = int(input())
-max_number = -1
-while n < 0:
- n = int(input())
- if max_number < n:
- n = max_number
-print(n) 
+max_number = n
+while n > 0:
+    n = int(input())
+    if max_number < n:
+        max_number = n
+print(max_number) 
