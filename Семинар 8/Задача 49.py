@@ -96,9 +96,12 @@ if __name__ == '__main__':
     main_menu()    
     # #data = ask_user()
     # # print(data)
-    # # 
     # lst_contacts = read_file(file_contacts)
     # print(lst_contacts)
     # search_param, what = ask_search()
     # res = search_contact(lst_contacts, search_param, what)
     # print(res)
+
+# https://docs.python.org/3/library/csv.html
+# https://docs-python.ru/standart-library/modul-sqlite3-python/brief-description/
+# https://docs-python.ru/standart-library/modul-csv-python/priemy-raboty-modulem-csv/
